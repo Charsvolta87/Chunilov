@@ -3,13 +3,13 @@ import { getDatabase, ref, push, onValue } from "https://www.gstatic.com/firebas
 
 // 🔥 Pegá acá TU config de Firebase
 const firebaseConfig = {
-  apiKey: "TU_API_KEY",
-  authDomain: "TU_AUTH_DOMAIN",
-  databaseURL: "TU_DATABASE_URL",
-  projectId: "TU_PROJECT_ID",
-  storageBucket: "TU_STORAGE_BUCKET",
-  messagingSenderId: "TU_MESSAGING_SENDER_ID",
-  appId: "TU_APP_ID"
+  apiKey: "AIzaSyAsMFXe1_SRmw4VAiixnJYwK8omxOx580A",
+  authDomain: "chunilov.firebaseapp.com",
+  projectId: "chunilov",
+  storageBucket: "chunilov.firebasestorage.app",
+  messagingSenderId: "35446950920",
+  appId: "1:35446950920:web:29f4208ce220d99e0a55bd",
+  measurementId: "G-KGB6B6CPHR"
 };
 
 const app = initializeApp(firebaseConfig);
@@ -49,3 +49,4 @@ onValue(usersRef, (snapshot) => {
     userList.appendChild(li);
   });
 });
+
