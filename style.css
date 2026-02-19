@@ -136,7 +136,7 @@ li {
   backdrop-filter: blur(10px);
   animation: popIn 0.4s ease;
   transition: 0.3s ease;
-  color: bkack;
+  color: black;
 }
 
 li:hover {
