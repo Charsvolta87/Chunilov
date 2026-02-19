@@ -87,6 +87,7 @@ form {
   justify-content: center;
   gap: 10px;
   flex-wrap: wrap;
+  color: black;
 }
 
 input {
