@@ -1,37 +1,181 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Chunilov - Comunidad Twitch</title>
-  <link rel="icon" href="imagenes/eb87b9f5-970e-4f5d-a4fb-eef81c901730-profile_image-70x70.png" type="image/x-icon">
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Nueva Escena 2027</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #0a0a0f;
+      color: #fff;
+    }
+
+    header {
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(0,0,0,0.6);
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 20px;
+      color: #8a2be2;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #ccc;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    .hero {
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: radial-gradient(circle at center, #1a0033, #000);
+    }
+
+    .hero h2 {
+      font-size: 48px;
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    .hero p {
+      margin: 20px 0;
+      color: #aaa;
+    }
+
+    .btn {
+      padding: 12px 25px;
+      border: none;
+      background: #8a2be2;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #a855f7;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section-title {
+      font-size: 28px;
+      margin-bottom: 30px;
+      font-family: 'Orbitron';
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #111;
+      padding: 20px;
+      border-radius: 12px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 15px rgba(138,43,226,0.4);
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #000;
+      color: #666;
+    }
+
+  </style>
 </head>
 <body>
-  <main>
-        
-    <section>
-      <div class="container">
-        <h1>SABADO 7 DE MARZO, 21HS<BR>JUNTADA!!</h1>
-        <p>Sumate dejando tu usuario de Twitch<br>solo si es seguro que puedas estar</p>
 
-        <form id="form">
-          <input type="text" id="username" placeholder="Tu usuario de Twitch" required>
-          <button type="submit">Sumarme</button>
-        </form>
+<header>
+  <h1>La Nueva Escena</h1>
+  <nav>
+    <a href="#">Inicio</a>
+    <a href="#categorias">Categorías</a>
+    <a href="#nominados">Nominados</a>
+    <a href="#votar">Votar</a>
+  </nav>
+</header>
 
-        <h2>👥 Confirmados:</h2>
-        <ul id="userList"></ul>
-      </div>
-    </section>
+<section class="hero">
+  <h2>Premios del Streaming Under 2027</h2>
+  <p>El evento que define la nueva generación de creadores</p>
+  <button class="btn">Próximamente</button>
+</section>
 
-      <section>
-      <h1>🎉 Fecha: Sabado 7 de marzo, 21hs</h1>
-        <p>Para confirmar la entrada $6000 al alias “ chunilov “<br>para el alquiler de la quinta</p>
+<section id="categorias">
+  <h3 class="section-title">Categorías</h3>
+  <div class="grid">
+    <div class="card">Mejor Streamer</div>
+    <div class="card">Revelación</div>
+    <div class="card">Mejor Comunidad</div>
+  </div>
+</section>
 
-        
-      </section>
-  </main>
-  <!-- Firebase SDK -->
-  <script type="module" src="app.js"></script>
+<section id="nominados">
+  <h3 class="section-title">Nominados</h3>
+  <div class="grid">
+    <div class="card">
+      <h4>Streamer 1</h4>
+      <p>Descripción breve</p>
+      <button class="btn">Ver perfil</button>
+    </div>
+    <div class="card">
+      <h4>Streamer 2</h4>
+      <p>Descripción breve</p>
+      <button class="btn">Ver perfil</button>
+    </div>
+  </div>
+</section>
+
+<section id="votar">
+  <h3 class="section-title">Votación</h3>
+  <p>Próximamente habilitada</p>
+</section>
+
+<footer>
+  <p>© 2027 La Nueva Escena</p>
+</footer>
+
 </body>
 </html>
+
