@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Chunilov - Comunidad Twitch</title>
+  <link rel="icon" href="imagenes/eb87b9f5-970e-4f5d-a4fb-eef81c901730-profile_image-70x70.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+        
+    <section>
+      <div class="container">
+        <h1>SABADO 7 DE MARZO, 21HS<BR>JUNTADA!!</h1>
+        <p>Sumate dejando tu usuario de Twitch<br>solo si es seguro que puedas estar</p>
+
+        <form id="form">
+          <input type="text" id="username" placeholder="Tu usuario de Twitch" required>
+          <button type="submit">Sumarme</button>
+
+        <h2>👥 Confirmados:</h2>
+        <ul id="userList"></ul>
+      </div>
+    </section>
+
+      <section>
+      <h1>🎉 Fecha: Sabado 7 de marzo, 21hs</h1>
+        <p>Para confirmar la entrada $6000 al alias “ chunilov “<br>para el alquiler de la quinta</p>
+
+        
+      </section>
+  </main>
+  <!-- Firebase SDK -->
+  <script type="module" src="app.js"></script>
+</body>
+</html>
+  
